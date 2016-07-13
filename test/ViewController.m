@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+NSInteger c=0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,4 +25,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)myCloseButton:(id)sender {
+    
+}
+
+- (IBAction)useMyButton:(id)sender {
+    if(c%2==1)
+        [setMyLabel setText:@"Hello"];
+    else
+        [setMyLabel setText:@"Hi"];
+    c++;
+}
 @end

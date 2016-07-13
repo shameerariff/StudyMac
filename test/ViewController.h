@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet UILabel *setMyLabel;
+}
+- (IBAction)myCloseButton:(id)sender;
 
+- (IBAction)useMyButton:(id)sender;
 
 @end
 
